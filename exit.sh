@@ -4,7 +4,7 @@ var=$(echo -e "Suspend\nExit i3\nReboot\nShutdown" | dmenu -fn 'Cantarell-8' -p 
 
 case "$var" in 
 	"Exit i3") i3-msg exit;;
-	"Suspend") systemctl suspend & betterlockscreen -l -t "BTFO";;
+	"Suspend") systemctl suspend & betterlockscreen -l;;
 	"Reboot") reboot;;
 	"Shutdown") shutdown now;;
 esac
