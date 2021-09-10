@@ -6,7 +6,6 @@ cp ~/.config/i3blocks/config ~/dotfiles/i3blocks
 
 cp -r ~/.config/polybar ~/suckless/dwm-6.2/ ~/dotfiles 
 
-notify-send ".FILES SAVED"
-
-cd ~/dotfiles/ && git add . && notify-send "READY TO COMMIT"
+cd ~/dotfiles/ && git add . && notify-send "DOTS READY"
+cd ~/scripts/ && git add . && notify-send "SCRIPTS READY"
 
