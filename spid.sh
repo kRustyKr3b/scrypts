@@ -1,9 +1,9 @@
 #!/bin/sh
 
-spid=$(echo -e "CLEAR\n1\n2\n3\n4\n5" | dmenu -fn "Iosevka Term-9" -p "Spid:")
+spid=$(echo -e "1\n2\n3\nCLEAR\n4\n5" | dmenu -fn "Iosevka Term-9" -p "Spid:")
 
 case "$spid" in
-	"CLEAR")sudo cpupower frequency-set -d 1.4GHz -u 2.7GHz -g ondemand   && notify-send "FULL RANGE";;
+	"CLEAR")sudo cpupower frequency-set -d 1.4GHz -u 2.7GHz -g schedutil && notify-send "FULL RANGE";;
 	"1")sudo cpupower frequency-set -d 1.4GHz -u 1.8GHz -g powersave   && notify-send "SPID I";;
 	"2")sudo cpupower frequency-set -d 1.4GHz -u 1.8GHz -g schedutil   && notify-send "SPID II";;
 	"3")sudo cpupower frequency-set -d 1.8GHz -u 2.3GHz -g schedutil   && notify-send "SPID III";;

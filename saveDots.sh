@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cp ~/.zshrc ~/.vimrc  ~/.config/alacritty/alacritty.yml ~/.config/i3/config ~/.config/ranger/rc.conf ~/.config/ranger/rifle.conf ~/.config/dunst/dunstrc ~/.xinitrc  ~/.config/nvim/init.vim ~/.config/qutebrowser/config.py ~/dotfiles 
+cp ~/.zshrc ~/.vimrc  ~/.config/alacritty/alacritty.yml ~/.config/i3/config ~/.config/ranger/rc.conf ~/.config/ranger/rifle.conf ~/.config/dunst/dunstrc /usr/local/bin/startdwm  ~/.config/nvim/init.vim ~/.config/qutebrowser/config.py ~/dotfiles 
 
 cp ~/.config/i3blocks/config ~/dotfiles/i3blocks
 
