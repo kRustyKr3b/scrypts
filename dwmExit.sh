@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 var=$(echo -e "Suspend\nExit DWM\nReboot\nShutdown" | dmenu -fn 'Iosevka Term-9' -p "Action:")
 
