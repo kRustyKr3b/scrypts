@@ -1,5 +1,5 @@
 #!/bin/sh
-choice=$(echo -e "OG\nNEON\nPUMPKIN\nNORD\nHK" | dmenu -i -fn 'Cantarell-8' -p "Yoo:")
+choice=$(echo -e "OG\nNEON\nPUMPKIN\nNORD\nHK" | rofi -dmenu -l 5 -p "Yoo")
 case "$choice" in
 	OG)
 		wal --theme /home/shaolinrus/wal_themes/og.json
