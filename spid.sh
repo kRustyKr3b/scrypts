@@ -1,6 +1,6 @@
 #!/bin/sh
 
-spid=$(echo -e "1\n2\n3\nCLEAR\n4\n5" | rofi -dmenu -p "Spid:" -l 6)
+spid=$(echo -e "1\n2\n3\nCLEAR\n4\n5" | rofi -dmenu -p "Gear:" -l 6)
 
 case "$spid" in
 	"CLEAR")sudo cpupower frequency-set -d 1.4GHz -u 2.7GHz -g schedutil && notify-send "FULL RANGE";;
